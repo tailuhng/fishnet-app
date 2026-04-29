@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FishNet</string>
+
+    <!--
+        ⚠️  BURAYA KENDİ URL'İNİ YAZ  ⚠️
+        Uygulamanı bir web sunucusuna yüklediğinde bu değerleri güncelle.
+        Örnek: https://fishnet.yourdomain.com
+        veya GitHub Pages: https://kullaniciadın.github.io/fishnet
+    -->
+    <string name="app_url">https://fishnet.yourdomain.com</string>
+    <string name="app_host">fishnet.yourdomain.com</string>
+</resources>
