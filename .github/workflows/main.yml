@@ -22,6 +22,14 @@ jobs:
       - name: Android SDK kur
         uses: android-actions/setup-android@v3
 
+      - name: Gradle wrapper oluştur
+        uses: gradle/actions/setup-gradle@v3
+        with:
+          gradle-version: '8.4'
+
+      - name: gradlew oluştur
+        run: gradle wrapper --gradle-version 8.4
+
       - name: Gradle izni ver
         run: chmod +x gradlew
 
