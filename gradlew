@@ -1,14 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="Theme.FishNet" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="android:windowBackground">@color/backgroundColor</item>
-        <item name="android:statusBarColor">@color/colorPrimary</item>
-        <item name="android:navigationBarColor">@color/navigationColor</item>
-    </style>
+#!/bin/sh
+# Gradle wrapper script
 
-    <style name="Theme.FishNet.Splash" parent="Theme.FishNet">
-        <item name="android:windowIsTranslucent">true</item>
-    </style>
-</resources>
+APP_HOME="$(cd "$(dirname "$0")" && pwd)"
+CLASSPATH="$APP_HOME/gradle/wrapper/gradle-wrapper.jar"
+JAVACMD="${JAVA_HOME}/bin/java"
+[ -z "$JAVA_HOME" ] && JAVACMD="java"
+
+exec "$JAVACMD" \
+  -classpath "$CLASSPATH" \
+  org.gradle.wrapper.GradleWrapperMain \
+  "$@"
